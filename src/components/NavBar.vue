@@ -67,7 +67,7 @@
             </svg>
           </button>
 
-         
+         <!--this is the hamburger menu button for mobile view-->
           <!-- Hamburger -->
           <button
             @click.stop="showMobileMenu = !showMobileMenu"
