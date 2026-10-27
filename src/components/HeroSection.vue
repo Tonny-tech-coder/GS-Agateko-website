@@ -2,7 +2,7 @@
   <section
     id="home"
     class="relative min-h-screen flex items-center pt-32 pb-20 scroll-mt-16 transition-colors duration-300 bg-cover bg-center bg-no-repeat"
-    style="background-image: url('/src/assets/new home pic.png');"
+    style="background-image: url('/new home pic.png');"
   >
     <div class="absolute inset-0 bg-gradient-to-br from-blue-900/100 via-sky-400/60 to-sky-500/80 dark:from-gray-900/90 dark:via-gray-600/80 dark:to-blue-900/80"></div>
 
