@@ -44,11 +44,111 @@
         </div>
       </div>
     </div>
-
+    
     <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/80 hover:text-white transition animate-bounce" aria-label="Scroll to about section">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
       </svg>
     </a>
   </section>
+  <!-- News section -->
+  <section class="bg-gray-50 py-16 dark:bg-gray-900 px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">
+        Latest News from GS Agateko
+      </h2>
+      <p class="mt-3 text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
+        Stay updated with what's happening at our school.
+      </p>
+    </div>
+
+    <!-- News grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+      <!-- Card 1 -->
+      <article class="group bg-white rounded-2xl shadow-sm hover:shadow-lg dark:shadow-gray-950/50  transition-shadow duration-300 overflow-hidden flex flex-col">
+        <img
+          src="/src/assets/new home pic.png"
+          alt="Students celebrating exam results"
+          class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+        />
+        <div class="p-5 flex flex-col flex-1">
+          <time datetime="2026-11-15" class="text-xs font-medium text-blue-600 uppercase tracking-wide">
+            15 Nov 2026
+          </time>
+          <h3 class="mt-2 text-lg font-semibold text-gray-900">
+            National Exam Results Released
+          </h3>
+          <p class="mt-2 text-sm text-gray-600 flex-1">
+            GS Agateko celebrates another strong performance in this year's national exams...
+          </p>
+          <a href="/news/exam-results"
+             class="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800">
+            Read more
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="group bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col">
+        <img src="/src/assets/new home pic.png" alt="Students at sports day"
+             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="p-5 flex flex-col flex-1">
+          <time datetime="2026-11-08" class="text-xs font-medium text-blue-600 uppercase tracking-wide">
+            08 Nov 2026
+          </time>
+          <h3 class="mt-2 text-lg font-semibold text-gray-900">Annual Sports Day</h3>
+          <p class="mt-2 text-sm text-gray-600 flex-1">
+            A full day of athletics, teamwork, and house competitions across all grades...
+          </p>
+          <a href="/news/sports-day"
+             class="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800">
+            Read more
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="group bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col">
+        <img src="/src/assets/new home pic.png" alt="New school library"
+             class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="p-5 flex flex-col flex-1">
+          <time datetime="2026-10-30" class="text-xs font-medium text-blue-600 uppercase tracking-wide">
+            30 Oct 2026
+          </time>
+          <h3 class="mt-2 text-lg font-semibold text-gray-900">New Library Opens</h3>
+          <p class="mt-2 text-sm text-gray-600 flex-1">
+            Our new library is now open with over 5,000 books and quiet study spaces...
+          </p>
+          <a href="/news/new-library"
+             class="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800">
+            Read more
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- View all -->
+    <div class="mt-12 text-center">
+      <a href="/news"
+         class="inline-block rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition-colors">
+        View all news
+      </a>
+    </div>
+  </div>
+</section>
+  
 </template>

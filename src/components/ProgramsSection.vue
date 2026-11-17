@@ -11,14 +11,14 @@
         <div
           v-for="program in programs"
           :key="program.title"
-          class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 group"
+          class="bg-white  p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 group"
         >
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition" :class="program.iconBg">
             <svg class="w-7 h-7" :class="program.iconColor" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="program.iconPath" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ program.title }}</h3>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">{{ program.title }}</h3>
           <p class="text-gray-600 dark:text-gray-400">{{ program.desc }}</p>
         </div>
       </div>
