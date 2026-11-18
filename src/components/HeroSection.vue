@@ -85,7 +85,7 @@
           <p class="mt-2 text-sm text-gray-600 flex-1">
             GS Agateko celebrates another strong performance in this year's national exams...
           </p>
-          <a href="/news/exam-results"
+          <a href="/src/components/news/Exams-results.vue"
              class="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800">
             Read more
             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@
           <p class="mt-2 text-sm text-gray-600 flex-1">
             A full day of athletics, teamwork, and house competitions across all grades...
           </p>
-          <a href="/news/sports-day"
+          <a href="/src/components/news/sports-day.vue"
              class="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800">
             Read more
             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -129,7 +129,7 @@
           <p class="mt-2 text-sm text-gray-600 flex-1">
             Our new library is now open with over 5,000 books and quiet study spaces...
           </p>
-          <a href="/news/new-library"
+          <a href="/src/components/news/new-library.vue"
              class="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800">
             Read more
             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
