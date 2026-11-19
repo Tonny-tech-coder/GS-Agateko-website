@@ -32,7 +32,7 @@
   
   <!-- Relative wrapper for the icon -->
   <div class="relative">
-    <img src="/src/assets/new home pic.png" alt="Academic Excellence"
+    <img src="/src/assets/new home pic.png" alt="Academic Excellence"  loading="lazy" 
          class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
     
     <!-- Top-Right Icon (Graduation Cap) -->
@@ -73,7 +73,7 @@
   
   <!-- 1. Wrap the image in a relative container -->
   <div class="relative">
-    <img src="/src/assets/new home pic.png" alt="Arts and Basic ICT"
+    <img src="/src/assets/new home pic.png" alt="Arts and Basic ICT"  loading="lazy" 
          class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
     
     <!-- 2. The Top-Right Icon -->
@@ -115,7 +115,7 @@
   
   <!-- Relative wrapper for the icon -->
   <div class="relative">
-    <img src="/src/assets/new home pic.png" alt="Sports and Athletics"
+    <img src="/src/assets/new home pic.png" alt="Sports and Athletics"  loading="lazy" 
          class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
     
     <!-- Top-Right Icon (Trophy) -->

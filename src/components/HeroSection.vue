@@ -73,6 +73,7 @@
         <img
           src="/src/assets/new home pic.png"
           alt="Students celebrating exam results"
+          loading="lazy"
           class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div class="p-5 flex flex-col flex-1">
@@ -97,7 +98,10 @@
 
       <!-- Card 2 -->
       <article class="group bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col">
-        <img src="/src/assets/new home pic.png" alt="Students at sports day"
+        <img 
+         src="/src/assets/new home pic.png"
+         alt="Students at sports day"  
+         loading="lazy" 
              class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
         <div class="p-5 flex flex-col flex-1">
           <time datetime="2026-11-08" class="text-xs font-medium text-blue-600 uppercase tracking-wide">
@@ -119,7 +123,10 @@
 
       <!-- Card 3 -->
       <article class="group bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col">
-        <img src="/src/assets/new home pic.png" alt="New school library"
+        <img 
+        src="/src/assets/new home pic.png" 
+        alt="New school library"
+         loading="lazy" 
              class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
         <div class="p-5 flex flex-col flex-1">
           <time datetime="2026-10-30" class="text-xs font-medium text-blue-600 uppercase tracking-wide">
