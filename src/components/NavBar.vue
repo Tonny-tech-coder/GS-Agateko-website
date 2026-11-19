@@ -2,9 +2,23 @@
   <nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg rounded-2xl border border-gray-200 dark:border-gray-700 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
+        
+        <!-- UPDATED: Logo and Text Container -->
         <div class="flex items-center">
-          <router-link to="/" class="text-2xl font-bold text-blue-800 dark:text-sky-400">
-            GS Agateko
+          <router-link to="/" class="flex items-center gap-2 lg:gap-3 hover:opacity-80 transition-opacity">
+            
+            <!-- ADD YOUR LOGO HERE -->
+            <img 
+              src="/src/assets/new home pic.png" 
+              alt="GS Agateko Logo" 
+              class="w-8 h-8 lg:w-10 lg:h-10 rounded-full object-cover border border-gray-200 dark:border-gray-600" 
+            />
+            
+            <!-- School Name -->
+            <span class="text-xl lg:text-2xl font-bold text-blue-800 dark:text-sky-400">
+              GS Agateko 
+            </span>
+            
           </router-link>
         </div>
 
@@ -67,7 +81,6 @@
             </svg>
           </button>
 
-         
           <!-- Hamburger -->
           <button
             @click.stop="showMobileMenu = !showMobileMenu"
@@ -99,7 +112,6 @@
         >
           {{ $t(link.label) }}
         </router-link>
-       
       </div>
     </div>
   </nav>
