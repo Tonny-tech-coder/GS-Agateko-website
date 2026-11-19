@@ -33,10 +33,70 @@
       </div>
     </div>
   </section>
-  <!--history section-->
-  <section>
-    <H1>this area is for history of the school</H1>
-  </section>
+  <!-- History Section -->
+<section class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      
+      <!-- Left Side: Text & Timeline -->
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+          Our Rich History
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+          Founded in [Year], GS Agateko has been a cornerstone of education in our community. What started as a small vision to provide quality education has grown into a thriving institution shaping the leaders of tomorrow.
+        </p>
+
+        <!-- Simple Timeline -->
+        <div class="space-y-6 border-l-2 border-blue-500 dark:border-sky-400 pl-6 ml-2">
+          
+          <!-- Timeline Item 1 -->
+          <div class="relative">
+            <!-- Dot -->
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-500 dark:bg-sky-400 border-4 border-white dark:border-gray-900"></div>
+            <h4 class="text-xl font-semibold text-gray-900 dark:text-white">The Beginning</h4>
+            <p class="text-gray-600 dark:text-gray-400 mt-1">
+              Opened its doors to the first group of students, laying the foundation for academic excellence.
+            </p>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-500 dark:bg-sky-400 border-4 border-white dark:border-gray-900"></div>
+            <h4 class="text-xl font-semibold text-gray-900 dark:text-white">Expansion</h4>
+            <p class="text-gray-600 dark:text-gray-400 mt-1">
+              Added new classrooms, science laboratories, and a library to support our growing student body.
+            </p>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-500 dark:bg-sky-400 border-4 border-white dark:border-gray-900"></div>
+            <h4 class="text-xl font-semibold text-gray-900 dark:text-white">Today</h4>
+            <p class="text-gray-600 dark:text-gray-400 mt-1">
+              Recognized as a leading school, consistently achieving top results in national examinations.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="relative">
+        <!-- Decorative background shape -->
+        <div class="absolute inset-0 bg-blue-100 dark:bg-sky-900/30 rounded-3xl transform translate-x-4 translate-y-4 -z-10"></div>
+        
+        <img 
+          src="/src/assets/new home pic.png" 
+          alt="GS Agateko Historic Building" 
+          class="rounded-3xl shadow-xl w-full object-cover h-[400px] lg:h-[500px]"
+          loading="lazy"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
 </template>
 
 <script setup>
