@@ -33,6 +33,10 @@
       </div>
     </div>
   </section>
+  <!--history section-->
+  <section>
+    <H1>this area is for history of the school</H1>
+  </section>
 </template>
 
 <script setup>
