@@ -1,0 +1,9 @@
+tasks i want you to do on this  home page:
+
+1.now i want you to add a type writing stlye to the ({{ $t('hero.title') }},{{ $t('hero.titleHighlight') }},{{ $t('hero.titleEnd') }}) , i want those texts to appear as if they are being 
+typed from left to right start on {{ $t('hero.title') }} then {{ $t('hero.titleHighlight') }} and {{ $t('hero.titleEnd') }}) in that order make it repeative
+
+
+2.under the get started button i want it to open a divison with a student registion form that will able able to send the data after the parent(end-user) is done  entering the info
+and send that info to the adimin is registion inbox that we will build later,that form should include the following student info :names ,class ,health reasons ,previos report either 
+either national or local 

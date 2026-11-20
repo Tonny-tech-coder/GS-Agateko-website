@@ -8,12 +8,16 @@
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
       <div class="max-w-3xl">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
-          <span>{{ $t('hero.title') }}</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white min-h-[3.5rem] md:min-h-[4rem] lg:min-h-[4.5rem]">
+          <!-- The typing text parts -->
+          <span>{{ typedTitle }}</span>
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-white">
-            {{ $t('hero.titleHighlight') }}
+            {{ typedHighlight }}
           </span>
-          <span>{{ $t('hero.titleEnd') }}</span>
+          <span>{{ typedEnd }}</span>
+          
+          <!-- A blinking cursor for realism -->
+          <span class="inline-block w-1 h-8 md:h-10 lg:h-12 bg-sky-300 ml-2 animate-pulse align-middle"></span>
         </h1>
         <p class="mt-6 text-lg md:text-xl text-blue-50 leading-relaxed max-w-2xl">
           {{ $t('hero.description') }}
@@ -159,3 +163,72 @@
 </section>
   
 </template>
+<!--added the type sciput funtion-->
+<script setup>
+import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n() // Ensure you have 't' to fetch the text
+
+// 1. Variables to hold the typed text
+const typedTitle = ref('')
+const typedHighlight = ref('')
+const typedEnd = ref('')
+
+let typingTimeout = null
+
+// 2. The typing function
+const startTyping = async () => {
+  // Get the text from your translations
+  const text1 = t('hero.title')
+  const text2 = t('hero.titleHighlight')
+  const text3 = t('hero.titleEnd')
+
+  // Reset text
+  typedTitle.value = ''
+  typedHighlight.value = ''
+  typedEnd.value = ''
+
+  // Small helper function to type a string letter by letter
+  const typeString = (text, targetRef, speed = 80) => {
+    return new Promise((resolve) => {
+      let i = 0
+      const typeChar = () => {
+        if (i < text.length) {
+          targetRef.value += text.charAt(i)
+          i++
+          typingTimeout = setTimeout(typeChar, speed)
+        } else {
+          // Pause slightly before moving to the next word
+          typingTimeout = setTimeout(resolve, 300)
+        }
+      }
+      typeChar()
+    })
+  }
+
+  // 3. Sequence the typing
+  await typeString(text1, typedTitle)
+  await typeString(text2, typedHighlight)
+  await typeString(text3, typedEnd)
+
+  // 4. Wait at the end, then restart the loop
+  typingTimeout = setTimeout(startTyping, 3000) // 3 seconds pause before repeating
+}
+
+// 5. Start typing when the page loads
+onMounted(() => {
+  startTyping()
+})
+
+// 6. Stop the timeout if the user leaves the page (prevents memory leaks)
+onUnmounted(() => {
+  clearTimeout(typingTimeout)
+})
+
+// Optional: Restart the animation if the user changes the language
+watch(locale, () => {
+  clearTimeout(typingTimeout)
+  startTyping()
+})
+</script>

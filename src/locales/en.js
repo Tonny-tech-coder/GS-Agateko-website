@@ -8,8 +8,8 @@ export default {
     signup: 'Sign up Now'
   },
   hero: {
-    title: 'Empowering',
-    titleHighlight: 'Young Minds',
+    title: 'Empowering ',
+    titleHighlight: 'Young Minds ',
     titleEnd: 'for Tomorrow',
     description: 'At GS Agateko, we believe in nurturing curiosity, creativity, and character. Join us in shaping the leaders of tomorrow through innovative education and a supportive community.',
     tagline: 'Learners today, leaders tomorrow.',
