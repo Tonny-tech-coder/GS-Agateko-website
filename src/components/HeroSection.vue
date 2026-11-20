@@ -170,17 +170,13 @@
     </div>
   </section>
 
-  <!-- ========================================== -->
-  <!-- REGISTRATION MODAL (Placed at the very bottom) -->
+    <!-- ========================================== -->
+  <!-- REGISTRATION MODAL -->
   <!-- ========================================== -->
   <div v-if="showRegistrationForm" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
     <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl w-full max-w-3xl my-8 relative">
       
-      <!-- Close Button -->
-      <button @click="showRegistrationForm = false" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 dark:hover:text-white">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-      </button>
-
+      
       <div class="p-6 sm:p-8">
         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Student Registration Form</h2>
         <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Please fill out all required fields to register a new student.</p>
@@ -276,9 +272,19 @@
             </div>
           </div>
 
-          <!-- Submit Button -->
-          <div class="pt-4">
-            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
+          <!-- ACTION BUTTONS (Submit & Cancel) -->
+          <div class="pt-4 flex flex-col sm:flex-row gap-4">
+            <button 
+              type="button" 
+              @click="showRegistrationForm = false" 
+              class="w-full sm:w-1/3 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white font-bold py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+            >
+              Cancel
+            </button>
+            <button 
+              type="submit" 
+              class="w-full sm:w-2/3 bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition"
+            >
               Submit Application
             </button>
           </div>
